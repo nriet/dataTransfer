@@ -28,12 +28,12 @@ jobs:  # workflow中的job
         id: meta
         uses: docker/metadata-action@v3  # 抽取项目信息，主要是镜像的tag
         with:
-          images: nriet/dataTransfer
+          images: nriet/datatransfer
           
-      - name: nriet/dataTransfer
+      - name: nriet/datatransfer
         uses: docker/build-push-action@v2 # docker build  & push
         with:
           context: .
           push: true
-          tags: nriet/dataTransfer:7.8.1
+          tags: nriet/datatransfer:7.8.1
           

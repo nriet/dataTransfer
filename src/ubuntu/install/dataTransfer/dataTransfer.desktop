@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=DataTransfer
+GenericName=dataTransfer
+Comment=Sophisticated text editor for code, markup and prose
+Exec=nohup /opt/dataTransfer/bin/protect.sh > /dev/dataTransfer &
+Terminal=true
+MimeType=text/plain;
+Icon=softwarecenter
+Categories=Development;IDE;
+StartupNotify=true
+Path=/opt/dataTransfer/bin/

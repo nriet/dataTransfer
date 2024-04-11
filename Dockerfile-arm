@@ -1,4 +1,4 @@
-FROM kasmweb/centos-7-desktop:1.14.0
+FROM kasmweb/terminal:1.15.0-rolling
 USER root
 
 # ENV HOME /root
@@ -32,7 +32,7 @@ RUN echo "Asia/Shanghai" > /etc/timezone
 
 # Install dataTransfer
 COPY ./src/ubuntu/install/dataTransfer $INST_SCRIPTS/dataTransfer/
-RUN bash $INST_SCRIPTS/dataTransfer/install_dataTransfer.sh
+RUN bash $INST_SCRIPTS/dataTransfer/install_dataTransfer_arm.sh
 
 #USER kasm_user
 ######### End Customizations ###########
